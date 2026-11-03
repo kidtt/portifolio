@@ -391,48 +391,101 @@
                     alt="Send me an email"
                 >
             </map>
+
             <h3>Send me a message</h3>
 
-<form action="thank-you.html" method="get">
-    <fieldset>
-        <legend>Your Details</legend>
+            <form action="thank-you.html" method="post" enctype="multipart/form-data">
 
-        <label for="fullname">Full name:</label>
-        <input type="text" id="fullname" name="fullname">
-        <br><br>
+                <fieldset>
+                    <legend>Your Details</legend>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-    </fieldset>
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <br><br>
 
-    <fieldset>
-        <legend>Your Message</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
 
-        <label for="reason">Reason for contacting me:</label>
-        <select id="reason" name="reason">
-            <optgroup label="Work">
-                <option value="internship">Internship offer</option>
-                <option value="freelance">Freelance project</option>
-                <option value="job">Full-time job</option>
-            </optgroup>
+                <fieldset>
+                    <legend>Project Details</legend>
 
-            <optgroup label="Study">
-                <option value="group-project">Group project</option>
-                <option value="tutoring">Tutoring</option>
-            </optgroup>
+                    <label for="phone">Phone (optional):</label>
+                    <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        pattern="0[79][0-9]{8}"
+                        title="Enter 10 digits starting with 09 or 07"
+                    >
+                    <br><br>
 
-            <option value="other">Other</option>
-        </select>
+                    <p>Preferred contact method:</p>
+                    <input type="radio" id="by-email" name="contact-method" value="email" checked>
+                    <label for="by-email">Email</label>
 
-        <br><br>
+                    <input type="radio" id="by-phone" name="contact-method" value="phone">
+                    <label for="by-phone">Phone</label>
+                    <br><br>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="6" cols="40"></textarea>
-    </fieldset>
+                    <label for="meeting">Preferred meeting date:</label>
+                    <input type="date" id="meeting" name="meeting" min="2026-11-01">
+                    <br><br>
 
-    <button type="submit">Send Message</button>
-    <button type="reset">Clear</button>
-</form>
+                    <label for="weeks">Project length (weeks):</label>
+                    <input type="number" id="weeks" name="weeks" min="1" max="52" step="1">
+                    <br><br>
+
+                    <label for="brief">Attach a project brief:</label>
+                    <input type="file" id="brief" name="brief">
+                    <br><br>
+
+                    <label for="colour">Preferred website colour:</label>
+                    <input type="color" id="colour" name="colour" value="#1f5fa8">
+                    <br><br>
+
+                    <label for="rating">How much do you like my portfolio? (1–10)</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="7">
+                    <br><br>
+
+                    <label for="budget">Your budget (ETB):</label>
+                    <input type="number" id="budget" name="budget" min="1000" step="500">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <label for="reason">Reason for contacting me:</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">-- Choose a reason --</option>
+
+                        <optgroup label="Work">
+                            <option value="internship">Internship offer</option>
+                            <option value="freelance">Freelance project</option>
+                            <option value="job">Full-time job</option>
+                        </optgroup>
+
+                        <optgroup label="Study">
+                            <option value="group-project">Group project</option>
+                            <option value="tutoring">Tutoring</option>
+                        </optgroup>
+
+                        <option value="other">Other</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                    <br>
+
+                    <input type="checkbox" id="copy" name="copy" value="yes">
+                    <label for="copy">Send me a copy of this message</label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear</button>
+            </form>
         </section>
 
     </main>
