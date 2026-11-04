@@ -26,7 +26,8 @@
 
         <p>
             Hello! I am a third-year Software Engineering student
-            at Addis Ababa Science and Technology University (AASTU).
+            at Addis Ababa Science and Technology University
+            (<abbr title="Addis Ababa Science and Technology University">AASTU</abbr>).
             I am passionate about technology, programming, and
             developing software solutions to real-world problems.
         </p>
@@ -39,23 +40,24 @@
             <a href="#contact">Contact</a> |
             <a href="projects.html">View All Projects</a>
         </nav>
-    <button type="button"
-    onclick="document.getElementById('hireDialog').showModal()">
-    Hire me
-</button>
 
-<dialog id="hireDialog">
-    <h2>Available for internships</h2>
-    <p>I am available for internships and freelance web projects from June 2027.</p>
-    <p>
-        <a href="#contact">Send me a message</a> or
-        <a href="files/cv.pdf" download>download my CV</a>.
-    </p>
-    <button type="button"
-        onclick="document.getElementById('hireDialog').close()">
-        Close
-    </button>
-</dialog>
+        <button type="button"
+            onclick="document.getElementById('hireDialog').showModal()">
+            Hire me
+        </button>
+
+        <dialog id="hireDialog">
+            <h2>Available for internships</h2>
+            <p>I am available for internships and freelance web projects from June 2027.</p>
+            <p>
+                <a href="#contact">Send me a message</a> or
+                <a href="files/cv.pdf" download>download my <abbr title="Curriculum Vitae">CV</abbr></a>.
+            </p>
+            <button type="button"
+                onclick="document.getElementById('hireDialog').close()">
+                Close
+            </button>
+        </dialog>
     </header>
 
     <main>
@@ -84,11 +86,17 @@
                 I am continuously improving my programming and
                 problem-solving abilities.
             </p>
-       <h3>Hear my introduction</h3>
-<audio controls>
-    <source src="media/intro.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio> 
+
+            <p>
+                My favourite tag is &lt;main&gt;, because it tells the browser
+                where the important content is &amp; helps screen readers.
+            </p>
+
+            <h3>Hear my introduction</h3>
+            <audio controls>
+                <source src="media/intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </section>
 
         <aside>
@@ -104,16 +112,17 @@
                 Consistent learning, curiosity, and patience
                 help me grow as a developer.
             </p>
-            <h3>A Talk That Inspires Me</h3>
-<p>This talk reminds me that mistakes are part of learning and growth.</p>
 
-<iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/bBlmvAITMrg"
-    title="Resilience: The Art of Failing Forward"
-    allowfullscreen>
-</iframe>
+            <h3>A Talk That Inspires Me</h3>
+            <p>This talk reminds me that mistakes are part of learning and growth.</p>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/bBlmvAITMrg"
+                title="Resilience: The Art of Failing Forward"
+                allowfullscreen>
+            </iframe>
         </aside>
 
         <section id="skills">
@@ -129,7 +138,7 @@
 
                 <li>Web Development
                     <ul>
-                        <li>HTML</li>
+                        <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                         <li>CSS</li>
                         <li>JavaScript</li>
                         <li>Node.js</li>
@@ -154,7 +163,6 @@
             </ul>
 
             <h3>My Learning Roadmap</h3>
-
             <ol>
                 <li>Strengthen programming fundamentals</li>
                 <li>Improve frontend development skills</li>
@@ -165,7 +173,6 @@
             </ol>
 
             <h3>Tools I Use</h3>
-
             <dl>
                 <dt>Visual Studio Code</dt>
                 <dd>
@@ -191,28 +198,29 @@
                     when working with application data.
                 </dd>
             </dl>
-        <h3>Skill Levels</h3>
 
-<p>
-    <label for="lvl-html">HTML</label>
-    <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
-</p>
+            <h3>Skill Levels</h3>
 
-<p>
-    <label for="lvl-python">Python</label>
-    <meter id="lvl-python" value="0.7" min="0" max="1">70%</meter>
-</p>
+            <p>
+                <label for="lvl-html">HTML</label>
+                <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+            </p>
 
-<p>
-    <label for="lvl-js">JavaScript</label>
-    <meter id="lvl-js" value="0.2" min="0" max="1"
-        low="0.3" high="0.7" optimum="1">20%</meter>
-</p>
+            <p>
+                <label for="lvl-python">Python</label>
+                <meter id="lvl-python" value="0.7" min="0" max="1">70%</meter>
+            </p>
 
-<p>
-    <label for="lvl-cpp">C++</label>
-    <meter id="lvl-cpp" value="0.5" min="0" max="1">50%</meter>
-</p>
+            <p>
+                <label for="lvl-js">JavaScript</label>
+                <meter id="lvl-js" value="0.2" min="0" max="1"
+                    low="0.3" high="0.7" optimum="1">20%</meter>
+            </p>
+
+            <p>
+                <label for="lvl-cpp">C++</label>
+                <meter id="lvl-cpp" value="0.5" min="0" max="1">50%</meter>
+            </p>
         </section>
 
         <section id="projects">
@@ -244,7 +252,6 @@
 
             <article>
                 <h3>My First Program</h3>
-
                 <p>
                     One of the first programs I learned to write in C++ was:
                     <code>cout &lt;&lt; "Hello, World!" &lt;&lt; endl;</code>
@@ -264,14 +271,16 @@
             <h3>BSc in Software Engineering</h3>
 
             <p>
-  Addis Ababa Science and Technology University,
-  <time datetime="2023-09">September 2023</time> – present
-</p>
-<p>
-    <label for="degree">Degree progress:</label>
-    <progress id="degree" value="40" max="100">40%</progress>
-    40%
-</p>
+                Addis Ababa Science and Technology University,
+                <time datetime="2023-09">September 2023</time> – present
+            </p>
+
+            <p>
+                <label for="degree">Degree progress:</label>
+                <progress id="degree" value="40" max="100">40%</progress>
+                40%
+            </p>
+
             <table border="1" cellpadding="8" cellspacing="0">
                 <caption>Academic Record — BSc in Software Engineering</caption>
 
@@ -389,6 +398,11 @@
                 Location:<br>
                 Addis Ababa,<br>
                 Ethiopia
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+251911223344">+251&nbsp;911&nbsp;223&nbsp;344</a>
             </p>
 
             <p>
@@ -544,22 +558,24 @@
                 <button type="submit">Send Message</button>
                 <button type="reset">Clear</button>
             </form>
-         <h3>Where I study</h3>
-<iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940058223038!2d38.807178473595826!3d8.885165391170528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793706277576!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
-     width="600"
-        height="350"
-        style="border:0;"
-        loading="lazy"
-        title="Map showing Addis Ababa, Ethiopia"
-        allowfullscreen>
-    </iframe>  
+
+            <h3>Where I study</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940058223038!2d38.807178473595826!3d8.885165391170528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793706277576!5m2!1sen!2set"
+                width="600"
+                height="350"
+                style="border:0;"
+                loading="lazy"
+                title="Map showing Addis Ababa Science and Technology University"
+                allowfullscreen>
+            </iframe>
         </section>
 
     </main>
 
     <footer>
-        <p>Copyright 2026 Kidest Tilahun. All rights reserved.</p>
+        <p>© 2026 Kidest Tilahun. All rights reserved.</p>
+        <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
     </footer>
 
 </body>
